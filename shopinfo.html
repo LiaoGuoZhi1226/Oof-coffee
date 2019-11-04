@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<title>Oof窩咖啡</title>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+		<a href="index.html"><img class="logo-img" src="images/logo.png"></a>
+		</div>
+	 <nav class="menunav">
+	 	<ul>
+	 		<li class="nav-item"><a href="delicacy.html">產品介紹</a></li>
+	 		<li class="nav-item"><a href="brand.html">品牌概念</a></li>
+	 		<li class="nav-item"><a href="shopinfo.html">門市資訊</a></li>
+	 		<li class="nav-item"><a href="contact.html">聯絡我們</a></li>
+	 	</ul>
+	 </nav>
+	 </header>
+	 <div class="min-logo">
+		<img src="images/6.jpg">
+		</div>
+
+		<div class="shop">
+			<div class="map-wrapper">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.547760414658!2d120.57576871496323!3d24.22261348435881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346915a96bd5d2e1%3A0x3287b1cb0bcc6617!2sCoffee%20at%20home!5e0!3m2!1szh-TW!2stw!4v1571740964467!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+		</div>
+		<div class="shopinfo-text">
+            <p>營業時間 : 週一 ~ 週日 9:30-20:00</p>
+			<br>
+			<p>地址位置 : 43342 台中市台中市沙鹿區北勢東路468-2號</p>
+			<br>
+			<p>訂位專線 : 04-2633 5659</p>
+		    <br>
+			<p>Email : Oof_house@yahoo.com.tw</p>
+		    <br>
+		    <p>公共運輸 : BRT 晉江寮站下車沿著東晉東路往下至北勢東路右轉直走1分鐘</p>			
+		</div>
+		
+		
+
+		 <div id="gotop"> <img src="images/gotop.png"> </div>
+	<footer class="footer">
+			© Oof窩咖啡 台中市沙鹿區北勢東路468-2號
+| Design : GuoZhi Liao |
+	</footer>
+<script type="text/javascript">
+$(function(){
+    $("#gotop").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },1000);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

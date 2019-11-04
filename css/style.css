@@ -1,0 +1,479 @@
+@charset "UTF-8"
+html{
+	font-size: 62.5%;
+}
+/* --------------------------------
+ * base
+ * -------------------------------- */
+body{
+	font-size: 1.2rem;
+	text-align: center;
+	font-family: Raleway,"Hiragino Kaku Gothic ProN", Meiyro ,sans-serif;	
+}
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+/* --------------------------------
+ * main-page
+ * -------------------------------- */
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header{
+	width: 100%;
+    text-align: center;
+    background-color:#FFFFFF;
+}
+.logo{
+	display: inline-block;
+	width: 100%;
+}
+.header .logo-img{
+	height: 175px;
+	width: 175px;
+}
+.header .logo-img:hover{
+	cursor: pointer;
+}
+.mainbg{
+    background: url('../images/bg.jpg') no-repeat fixed  top;
+	background-size: cover;
+}
+/* --------------------------------
+ * nav
+ * -------------------------------- */
+.menunav{
+	background-color: #FFFFFF;
+	margin-bottom: : 20px;
+	padding: 10px;
+}
+.menunav .nav-item{
+	display: inline-block;
+	margin: 0 20px;
+	font-size:1.2rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.menunav .nav-item a{
+	text-decoration: none;
+	color: #8B4513;	
+}
+.menunav .nav-item a::after{
+	content: '';
+	display: block;
+	width: 0;
+	border-bottom: 1px solid #8B4513;
+	transition: width 0.3s ease-in-out;
+	margin: 6px auto 0;
+}
+.menunav .nav-item a:hover::after{
+	width: 100%;
+	cursor: pointer;
+}
+/* --------------------------------
+ * about
+ * -------------------------------- */
+.about{
+	background-color: #FFFFFF;
+	margin-top: 60px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding-bottom: 40px;
+	color: #8B4513;
+	letter-spacing: 2px;
+}
+.about p{
+	padding-top: 10px;
+}
+.about img{
+	width: 800px;
+	height: 400px;
+}
+/* --------------------------------
+ * hot&news
+ * -------------------------------- */
+.hotnews{
+	background: url('../images/hotnews-bg.jpg') repeat ;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding-bottom: 40px;
+	color: #8B4513;
+	letter-spacing: 2px;
+	width: 100%;
+	padding-top: 20px;
+}
+.hot-wrapper{
+	display: table;
+	width: 100%;
+	
+	table-layout: fixed;
+	padding-bottom: 80px;
+	font-size: 1.2rem;
+}
+.hot-box{
+	display: table-cell;
+}
+.hot-image{
+	display: block;
+	width:100%;
+	height: 250px;
+	transform:scale(1,1);transition: all 1s ease-out;
+}
+.hot-image:hover{
+	transform:scale(1.2,1.2);
+	cursor: pointer;
+}
+.pic{
+	overflow:hidden;
+	margin: 60px 5px 0;
+}
+
+/* --------------------------------
+ * minmenu
+ * -------------------------------- */
+.minmenu{
+	text-align: center;
+	width: 100%;
+}
+.minmenu-icon{
+	width: 150px;
+	height: 150px;
+	margin: 0 60px;
+	padding-bottom: 10px;
+	transition: transform 0.6s;
+	border-radius: 100px;
+	border: 4px solid;
+	color: #8B4513;
+}
+.minmenu-icon:hover{
+	transform: rotate(360deg);
+	cursor: pointer;
+}
+hr.style-one {
+    border: 0;
+    height: 0; 
+    box-shadow: 0 0 10px 1px black;
+}
+hr.style-one:after {  
+    content: ""; 
+}
+/* --------------------------------
+ * brand
+ * -------------------------------- */
+.brand-main{
+ 	width: 100%;
+ }
+ .min-logo img{
+ 	width: 80%;
+ }
+ .wrapper{
+	width: 100%;
+	height: 330px;
+}
+.video{
+	float: left;
+	padding-left: 100px;
+	width: 50%;	
+}
+.video iframe{
+	width:100%;
+	height: 300px;
+}
+.brand-intro{
+	background-color: #FFFFFF;
+	float: left;
+	font-size: 1rem;
+	height: 315px;
+	width: 50%;
+}
+.brand-intro p{
+	letter-spacing: 2px;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.brand-text{
+	width: 100%;
+	font-size: justify;
+	padding: 20px;
+	margin: 10px;
+	background: url('../images/brandbg.jpg') ;
+	background-size: cover;
+	
+	letter-spacing: 2px;
+}
+.brand-text p{
+	display: inline-block;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.brand-text-title{
+	text-align: center;
+	color: #8B4513;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+/* --------------------------------
+ * gotop
+ * -------------------------------- */
+#gotop {
+  background: url('../images/hotnews-bg.jpg') repeat ;
+    cursor: pointer;
+}
+#gotop img{
+	 height: 30px;
+    width: 30px;
+    margin-top: 10PX;
+}
+/* --------------------------------
+ * delicacy
+ * -------------------------------- */
+ .menu{
+ 	width: 100%;
+ 	background: url('../images/hotnews-bg.jpg');
+ 	font-size: 2.5rem;
+ 	font-weight: bold;
+ 	color: #8B4513;
+ }
+ .menu-img .food{
+ 	padding: 40px 0;
+ }
+ 
+ .menu .menu-img img{
+ 	width: 60%;
+ 	height: auto;
+ 	margin: 10px;
+}
+.menu .menu-img img:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+.delicacy-menu{
+	padding: 10px;
+	background-color: #8B4513;
+
+}
+.delicacy-item{
+	display: inline-block;
+	text-align: center;
+	margin: 0 80px;
+	font-weight: bold;
+	font-size: 1.3rem;
+	color: #000000;
+	letter-spacing: 2px;
+}
+.delicacy-item:hover{
+	color: #FFFFFF;
+}
+ 
+/* --------------------------------
+ * shop-information
+ * -------------------------------- */
+.map-wrapper {
+	
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+}
+.map-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+ .shopinfo-text{
+ 	width: 100%;
+ 	text-align: center;
+
+ }
+ .shopinfo-text p{
+ 	letter-spacing: 2px;
+ 	font-size: 1rem;
+ }
+ 
+ 
+/* --------------------------------
+ * contact
+ * -------------------------------- */
+ .heading{
+ 	font-size: 2.5rem;
+ }
+ .contact{
+  padding: 80px 0 150px;
+  background-color:#A0522D;
+  
+}
+.contact-form{
+  width: 50%;
+  margin: 50px auto 0;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color:black;
+  font-size: 1rem;
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+.contact-form textarea {
+  height: 150px;
+
+}
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color:black;
+  cursor: pointer;
+}
+ input::placeholder
+{
+   color:#444444;
+   font-size: 0.8rem;
+}
+textarea::placeholder{
+	 color:#444444;
+	 
+	 font-size: 1rem;
+}
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer{
+    padding: 20px;
+	text-align: center;
+	background: url('../images/hotnews-bg.jpg') repeat ;
+	font-size: 0.8rem;
+}
+/* --------------------------------
+ * smart phone
+ * -------------------------------- */
+
+ @media only screen and (max-width:768px){
+  /* 智慧型手機及垂直縱向的平板電腦所使用的樣式 */
+  .mainbg{
+  	background-image: none;
+ }
+  .menunav{
+  margin-right: 20px;
+ }
+  .menunav .nav-item{
+	display: inline-block;
+	margin: 0 10px;
+	font-size:0.8rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.about img{
+	width: 100%;
+	height: 100%;
+}
+.hot-wrapper{
+	display: block;
+	margin-top: 60px;
+	padding-bottom: 60px;
+	font-size: 0.8rem;
+}
+.hot-box, .hot-wrapper{
+	display: block;
+}
+.hot-box{
+	font-size: 1rem;
+	margin: 50px 50px 0;
+	padding-top: 20px;
+}
+/* --------------------------------
+ * brand
+ * -------------------------------- */
+.video{
+	width: 80%;
+}
+.brand-intro{
+	margin: 0 10px;
+	font-size: 0.8rem;
+	width: 95%;
+	background-color:#A0522D;
+}
+.brand-text{
+	width: 95%;
+	background: 0;
+    background-color: 	#A0522D	;
+    font-size: 0.8rem;
+}
+.brand-text-title{	
+	color: #000000;
+}
+/* --------------------------------
+ * delicacy
+ * -------------------------------- */
+ .delicacy-item{
+ 	margin: 0 20px;
+ 	font-size: 0.8rem;
+ }
+  .menu{
+  	font-size: 1.5rem;
+ }
+
+
+/* --------------------------------
+ * shop-information
+ * -------------------------------- */
+.shopinfo-text{
+ 	width: 100%;
+ 	text-align: left;
+ 	background-color: #A0522D;
+ 	padding: 20px 20px 10px;
+ 	margin-top: 10px;
+ 
+ }
+ .shopinfo-text p{
+ 	letter-spacing: 1px;
+ 	font-size: 0.8rem;
+ }
+ .contact {
+ 	font-size: 0.8rem;
+ }
+ .heading{
+ 	font-size: 1.5rem;
+ }
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer{
+	font-size: 0.6rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
